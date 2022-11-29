@@ -2,6 +2,7 @@ import React from 'react'
 import Data from './Data'
 import "./home.css"
 import Ban_web from './Banweb'
+import ScrollDown from './ScrollDown'
 
 const Home = () => {
   return (
@@ -14,6 +15,9 @@ const Home = () => {
 
           <Data />
         </div>
+        
+        <ScrollDown />
+
       </div>
     </section>
   )
