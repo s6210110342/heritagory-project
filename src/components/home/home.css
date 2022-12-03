@@ -9,13 +9,6 @@
     align-items: center;
 }
 
-.button__line {
-    margin-right: 6px;
-    background-color: #62a88b;
-    margin-bottom: 6px;
-    margin-top: -15px;
-}
-
 .home__social {
     display: grid;
     grid-template-columns: max-content;
@@ -30,7 +23,7 @@
 
 .home__subtitle {
     position: relative;
-    font-size: 20px;
+    font-size: 23px;
     padding-left: 5.4rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
@@ -47,8 +40,9 @@
 }
 
 .home__description {
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1);
     min-width: 350px;
+    font-size: 18.4px;
 }
 
 .home__img {
