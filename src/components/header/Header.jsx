@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./header.css";
 import { Link, Routes, Route } from "react-router-dom";
 import Home from "../home/Home";
+import About from "../about-us/About"
 import Thai from "../thai/Thai";
 import Islam from "../islam/Islam";
+import { Contact } from "../contact/Contact";
 
 const Header = () => {
   /* =============== Toggle Menu ===============*/
@@ -14,18 +16,18 @@ const Header = () => {
       <div className='header'>
       <nav className="nav container">
         <Link to="/" className="nav__logo">
-          Heritagory
+          HeritageLaws
         </Link>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item ">
-              <Link to="/" className="nav__link active-link">
+              <Link to="/" className="nav__link">
                 <i className="uil uil-estate nav__icon"></i> หน้าแรก
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="#about" className="nav__link">
+              <Link to="about" className="nav__link">
                 <i className="uil uil-user nav__icon"></i> เกี่ยวกับเรา
               </Link>
             </li>
@@ -40,7 +42,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="#contact" className="nav__link">
+              <Link to="contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i> ติดต่อเรา
               </Link>
             </li>
@@ -60,10 +62,10 @@ const Header = () => {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="#about" element={<Home />}></Route>
+        <Route path="about" element={<About />}></Route>
         <Route path="thai" element={<Thai />}></Route>
         <Route path="islam" element={<Islam />}></Route>
-        <Route path="#contact" element={<Home />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
       </Routes>
     </header>
   );
