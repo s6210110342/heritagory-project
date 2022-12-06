@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import Dropdown from 'react-dropdown';
 // import {InputLabel, MenuItem, Select, FormControl} from '@mui/material';
-
-
-
-
 import 'react-dropdown/style.css';
 import './Calc.css';
 
