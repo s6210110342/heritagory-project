@@ -77,6 +77,7 @@ const Header = () => {
 
         {/* islam page */}
         <Route path="/calc" element={<Calc />}></Route>
+        
       </Routes>
     </header>
   );

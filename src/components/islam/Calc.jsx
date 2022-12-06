@@ -50,7 +50,7 @@ function Calc(){
 
         
         return (
-            <div>
+            <div className=' text-center'>
                 <br></br>
                 <h2>คำนวณส่วนแบ่งมรดกอิสลาม</h2>
                     <div className='Drop1'>
