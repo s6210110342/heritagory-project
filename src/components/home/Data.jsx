@@ -14,6 +14,10 @@ const Data = () => {
         หรือกฎหมายมรดกอิสลาม เพื่อความสะดวกทางเราได้มีการคิดค้นเครื่องมือคำนวณส่วนแบ่งมรดกในศาสนาอิสลาม
         และ Line Official ที่คุณสามารถเพิ่มเพื่อนกับเราได้เพียง "คลิก" เดียว...
       </p>
+      
+      <a href="https://lin.ee/njDD62n" className="button button__line">
+        <span>Add Line</span> <i class="uil uil-angle-double-right"></i>
+      </a>
 
       <a href="thai" className="button home__button mr-2 mb-2">ไทย</a>
       <a href="islam" className="button home__button mr-2">อิสลาม</a>

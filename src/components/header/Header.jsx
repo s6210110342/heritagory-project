@@ -5,9 +5,12 @@ import Home from "../home/Home";
 import About from "../about-us/About"
 import Thai from "../thai/Thai";
 import Islam from "../islam/Islam";
+<<<<<<< HEAD
 import { Contact } from "../contact/Contact";
 import NotMatch from "../../NotMatch";
 import Blog from '../thai/blog/Blog'
+=======
+>>>>>>> 9465c25af40c6daa07e38569b751e87f74b684dc
 
 const Header = () => {
   /* =============== Toggle Menu ===============*/
