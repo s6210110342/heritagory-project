@@ -4,6 +4,7 @@ import { Link, Routes, Route } from "react-router-dom";
 import Home from "../home/Home";
 import Thai from "../thai/Thai";
 import Islam from "../islam/Islam";
+import Calc from "../islam/Calc";
 
 const Header = () => {
   /* =============== Toggle Menu ===============*/
@@ -63,6 +64,7 @@ const Header = () => {
         <Route path="#about" element={<Home />}></Route>
         <Route path="thai" element={<Thai />}></Route>
         <Route path="islam" element={<Islam />}></Route>
+        <Route path="calc" element={<Calc />}></Route>
         <Route path="#contact" element={<Home />}></Route>
       </Routes>
     </header>

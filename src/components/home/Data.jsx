@@ -19,7 +19,7 @@ const Data = () => {
         <span>Add Line</span> <i class="uil uil-angle-double-right"></i>
       </a>
 
-      <a href="islam" className="button">
+      <a href="calc" className="button">
         คำนวณมรดกอิสลาม <i class="uil uil-angle-double-right"></i>
       </a>
       
