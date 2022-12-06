@@ -15,9 +15,9 @@ const Data = () => {
         และ Line Official ที่คุณสามารถเพิ่มเพื่อนกับเราได้เพียง "คลิก" เดียว...
       </p>
 
-      <a href="thai" className="button home__button mr-2 mb-2">ไทย</a>
-      <a href="islam" className="button home__button mr-2">อิสลาม</a>
-      <a href="islam" className="button home__button">คำนวณมรดกอิสลาม</a>  
+      <a href="/thai" className="button home__button mr-2 mb-2">ไทย</a>
+      <a href="/islam" className="button home__button mr-2">อิสลาม</a>
+      <a href="/calc" className="button home__button">คำนวณมรดกอิสลาม</a>  
     </div>
   );
 };
