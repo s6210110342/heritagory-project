@@ -47,6 +47,11 @@
     text-decoration-line: underline;
 }
 
+.nav__link:focus {
+    color: #576b9e;
+    text-decoration-line: underline;
+}
+
 .nav__icon,
 .nav__close,
 .nav__toggle {

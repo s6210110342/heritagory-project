@@ -2,11 +2,17 @@ import React from "react";
 import ScrollDown from "./ScrollDown";
 import "./about.css";
 import ThaiLawImg from "../../assets/About-law-thai1.jpg";
-import YTImg from "../../assets/yt3.png"
+import YTImg from "../../assets/yt3.png";
+import { Helmet } from "react-helmet";
 
 const About = () => {
+  const TITLE = "เกี่ยวกับเรา - About Us";
+
   return (
     <div className="container grid">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <h2 className="section__title mt-32">เกี่ยวกับเรา</h2>
 
       <section className="about section" id="about">
@@ -29,21 +35,25 @@ const About = () => {
             มหาวิทยาลัยสงขลานครินทร์ เป็นต้น โดยมีรายละเอียดดังนี้
           </span>
         </div>
-        
+
         <ScrollDown />
 
         {/* อาจารย์ */}
         <div>
-          <h1 className="about_title">อาจารย์ที่ปรึกษาโครงงาน และผู้เชี่ยวชาญ</h1>
+          <h1 className="about_title">
+            อาจารย์ที่ปรึกษาโครงงาน และผู้เชี่ยวชาญ
+          </h1>
           <div className="about__container1 grid">
-            <p className="about_font text-center mb-10">อาจารย์ที่ปรึกษาโครงงาน
+            <p className="about_font text-center mb-10">
+              อาจารย์ที่ปรึกษาโครงงาน
               <br /> ----------------------------
               <br /> รศ.ดร. พิชญา ตัณฑัยย์
               <br /> - อาจารย์คณะวิศวกรรมศาสตร์ -
-              <br />  สาขาวิศวกรรมคอมพิวเตอร์ 
+              <br /> สาขาวิศวกรรมคอมพิวเตอร์
               <br /> - มหาวิทยาลัยสงขลานครินทร์ -
             </p>
-            <p className="about_font text-center">ผู้เชี่ยวชาญ
+            <p className="about_font text-center">
+              ผู้เชี่ยวชาญ
               <br /> ----------------------------
               <br /> ดร.ภาณุพงศ์ เฉลิมสิน
               <br /> - อาจารย์คณะนิติศาสตร์ -
@@ -55,23 +65,25 @@ const About = () => {
         {/* ไทย */}
         <div>
           <h1 className="about_title">กฎหมายมรดกไทย</h1>
-          <span className="about_font">แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกไทยมีดังนี้</span>
-          
+          <span className="about_font">
+            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกไทยมีดังนี้
+          </span>
+
           <div className="about__container1 grid text-center">
             <img src={ThaiLawImg} alt="" className="about__img" />
-            
-              <p className="about_font">
-                กฎหมายแพ่งและพาณิชย์ว่าด้วยมรดกทั้ง <br /> (Civil and Commercial Code
-                : Succession)
-                <br /> ----------------------------
-                <br /> อ่านต่อที่ : {""} 
-                <a
-                  className="text-indigo-700 underline"
-                  href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
-                >
-                  หนังสือกฎหมายมรดกไทย
-                </a>
-              </p>
+
+            <p className="about_font">
+              กฎหมายแพ่งและพาณิชย์ว่าด้วยมรดกทั้ง <br /> (Civil and Commercial
+              Code : Succession)
+              <br /> ----------------------------
+              <br /> อ่านต่อที่ : {""}
+              <a
+                className="text-indigo-700 underline"
+                href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
+              >
+                หนังสือกฎหมายมรดกไทย
+              </a>
+            </p>
           </div>
 
           <div className="about__container1 grid text-center">
@@ -79,14 +91,14 @@ const About = () => {
             <p className="about_font">
               ศึกษาผ่านทาง Youtube Channel
               <br /> ----------------------------
-              <br /> ประวัติส่วนตัว : {""} 
+              <br /> ประวัติส่วนตัว : {""}
               <a
                 className="text-indigo-700 underline"
                 href="https://race.nstru.ac.th/home_ex/e-portfolio/index.php/search/personal/1976"
               >
                 YATREE SOMLAM
               </a>
-              <br /> Youtube Channel : {""} 
+              <br /> Youtube Channel : {""}
               <a
                 className="text-indigo-700 underline"
                 href="https://www.youtube.com/channel/UCEQCn1dFIW51SbF3ss8gEyg"
@@ -94,54 +106,55 @@ const About = () => {
                 YATREE SOMLAM
               </a>
             </p>
-            
-          </div>  
+          </div>
         </div>
 
         {/* อิสลาม */}
         <div>
           <h1 className="about_title">กฎหมายมรดกอิสลาม</h1>
-          <span className="about_font">แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกไทยมีดังนี้</span>
-          
+          <span className="about_font">
+            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกไทยมีดังนี้
+          </span>
+
           {/* <div className="about__container1 grid text-center">
-            <img src={ThaiLawImg} alt="" className="about__img" />
-            
+              <img src={ThaiLawImg} alt="" className="about__img" />
+              
+                <p className="about_font">
+                  กฎหมายแพ่งและพาณิชย์ว่าด้วยมรดกทั้ง <br /> (Civil and Commercial Code
+                  : Succession)
+                  <br /> ----------------------------
+                  <br /> อ่านต่อที่ : {""} 
+                  <a
+                    className="text-indigo-700 underline"
+                    href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
+                  >
+                    หนังสือกฎหมายมรดกไทย
+                  </a>
+                </p>
+            </div>
+
+            <div className="about__container1 grid text-center">
+              <img src={YTImg} alt="" className="YT__img" />
               <p className="about_font">
-                กฎหมายแพ่งและพาณิชย์ว่าด้วยมรดกทั้ง <br /> (Civil and Commercial Code
-                : Succession)
+                ศึกษาผ่านทาง Youtube Channel
                 <br /> ----------------------------
-                <br /> อ่านต่อที่ : {""} 
+                <br /> ประวัติส่วนตัว : {""} 
                 <a
                   className="text-indigo-700 underline"
-                  href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
+                  href="https://race.nstru.ac.th/home_ex/e-portfolio/index.php/search/personal/1976"
                 >
-                  หนังสือกฎหมายมรดกไทย
+                  YATREE SOMLAM
+                </a>
+                <br /> Youtube Channel : {""} 
+                <a
+                  className="text-indigo-700 underline"
+                  href="https://www.youtube.com/channel/UCEQCn1dFIW51SbF3ss8gEyg"
+                >
+                  YATREE SOMLAM
                 </a>
               </p>
-          </div>
-
-          <div className="about__container1 grid text-center">
-            <img src={YTImg} alt="" className="YT__img" />
-            <p className="about_font">
-              ศึกษาผ่านทาง Youtube Channel
-              <br /> ----------------------------
-              <br /> ประวัติส่วนตัว : {""} 
-              <a
-                className="text-indigo-700 underline"
-                href="https://race.nstru.ac.th/home_ex/e-portfolio/index.php/search/personal/1976"
-              >
-                YATREE SOMLAM
-              </a>
-              <br /> Youtube Channel : {""} 
-              <a
-                className="text-indigo-700 underline"
-                href="https://www.youtube.com/channel/UCEQCn1dFIW51SbF3ss8gEyg"
-              >
-                YATREE SOMLAM
-              </a>
-            </p>
-            
-          </div>   */}
+              
+            </div>   */}
         </div>
       </section>
     </div>

@@ -1,36 +1,46 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { Helmet } from "react-helmet";
 
 //email: projectinheritance342362@gmail.com
 //password: inheritancelaw342362
 //contact form connect with email use Emailjs (Tool)
 
 export const Contact = () => {
+  const TITLE = "ติดต่อเรา - Contact Us";
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_axak94q",
-      "template_b27mvxi",
-      form.current,
-      "WRYOa_jldWi0Tv4Bn"
-    )
-    .then((result) => {
-        console.log(result.text);
-        alert("เราได้รับข้อความของคุณแล้ว!.");
-        form.current.reset();
-    }, (error) => { 
-        console.log(error.text);
-        alert("ขอโทษเป็นอย่างสูง เกิดข้อผิดพลาดบางอย่าง");
-        form.current.reset();
-    });
+    emailjs
+      .sendForm(
+        "service_axak94q",
+        "template_b27mvxi",
+        form.current,
+        "WRYOa_jldWi0Tv4Bn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("เราได้รับข้อความของคุณแล้ว!.");
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("ขอโทษเป็นอย่างสูง เกิดข้อผิดพลาดบางอย่าง");
+          form.current.reset();
+        }
+      );
   };
 
   return (
     <section className="contact section" id="contact">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <h2 className="section__title mt-8">ติดต่อเรา</h2>
       <span className="section__subtitle">Contact Us</span>
 
@@ -69,7 +79,7 @@ export const Contact = () => {
                 placeholder="Write your message (คุณต้องการติดต่อเราเรื่องอะไร)"
               ></textarea>
             </div>
-             
+
             <button className="button button--flex">
               Send Message
               <svg

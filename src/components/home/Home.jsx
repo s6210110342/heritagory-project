@@ -21,6 +21,8 @@ const Home = () => {
         
         {/* <About /> */}
 
+        
+
       </div>
     </section>
   )

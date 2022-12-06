@@ -1,0 +1,26 @@
+.blogList-wrap {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 3rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .blogList-wrap {
+        grid-template-columns: repeat(2 ,1fr);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .blogList-wrap {
+        grid-template-columns: max-content;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 421px) {
+  }
+  

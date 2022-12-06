@@ -152,7 +152,7 @@ img {
   background-color: #576b9e;
   color: var(--container-color);
   padding: 0.85rem 2rem;
-  border-radius: 2rem;
+  border-radius: 10px;
   font-weight: var(--font-medium);
 }
 
@@ -193,9 +193,9 @@ img {
     margin: 0 0 var(--header-height) 0;
   } */
 
-  .section {
-    /* padding: 4rem 0 4rem; */
-  }
+  /* .section {
+    padding: 4rem 0 4rem;
+  } */
 
   /* .section__subtitle {
     margin-bottom: var(--mb-3);
