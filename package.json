@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@mui/material": "^5.10.16",
+=======
+    "@emailjs/browser": "^3.10.0",
+>>>>>>> 97cec90cbaf411108fdbf8798d674755ada24f7a
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -16,7 +20,9 @@
     "react-dropdown": "^1.11.0",
     "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "router-dom": "^2.2.9",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

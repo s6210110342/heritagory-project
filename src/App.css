@@ -53,9 +53,9 @@
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
-    --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
+    --big-font-size: 3rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
     --h3-font-size: 1rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
@@ -125,7 +125,7 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: 18px;
   margin-bottom: 4rem;
 }
 
@@ -151,13 +151,13 @@ img {
   display: inline-block;
   background-color: #576b9e;
   color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 2rem;
   font-weight: var(--font-medium);
 }
 
 .button:hover {
-  background-color: #d59292;
+  background-color: var(--title-color);
 }
 
 .button__icon {
@@ -194,7 +194,7 @@ img {
   } */
 
   .section {
-    padding: 4rem 0 4rem;
+    /* padding: 4rem 0 4rem; */
   }
 
   /* .section__subtitle {
@@ -211,8 +211,8 @@ img {
     --big-font-size: 2.25rem;
   }
 
-  .container {
-    margin-left: -12px;
+  /* .container {
+    margin-left: var(--mb-1);
     margin-right: var(--mb-1);
-  }
+  } */
 }
