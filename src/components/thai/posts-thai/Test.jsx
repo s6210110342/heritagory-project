@@ -7,29 +7,31 @@ const MainContent = () => {
 
   return (
     <div className='content'>
-      <h1>Table of Content with Item highlight in React</h1>
       <p>{DummyText}</p>
-      <h2 id="initial-header">Setting up React</h2>
+      
+      <h2 id="initial-header">1. Setting up React</h2>
       <p>{DummyText}</p>
-      <h2 id="second-header">Create a table of content</h2>
-      <p>{DummyText}</p>
-      <p>{DummyText}</p>
-      <h3 id="third-header">Create a TOC component</h3>
+      <h2 id="second-header">2. Create a table of content</h2>
       <p>{DummyText}</p>
       <p>{DummyText}</p>
-      <h3 id="fourth-header">Find the headings on the page</h3>
-      <p>{DummyText}</p>
-      <p>{DummyText}</p>
-      <h3 id="fifth-header">Listing all found heading</h3>
-      <p>{DummyText}</p>
-      <p>{DummyText}</p>
-      <h3 id="sixth-header">Linking heading to there respective sections</h3>
-      <p>{DummyText}</p>
-      <p>{DummyText}</p>
-      <h3 id="find-highlight">Find and highlight the currently active heading</h3>
-      <p>{DummyText}</p>
-      <p>{DummyText}</p>
-      <h2 id='conclusion'>Conclusion</h2>
+      
+      <h3 id="third-header">2.1 Create a TOC component</h3>
+      <p className='ml-4'>{DummyText}</p>
+      <p className='ml-4'>{DummyText}</p>
+      <h3 id="fourth-header">2.2 Find the headings on the page</h3>
+      <p className='ml-4'>{DummyText}</p>
+      <p className='ml-4'>{DummyText}</p>
+      <h3 id="fifth-header">2.3 Listing all found heading</h3>
+      <p className='ml-4'>{DummyText}</p>
+      <p className='ml-4'>{DummyText}</p>
+      <h3 id="sixth-header">2.4 Linking heading to there respective sections</h3>
+      <p className='ml-4'>{DummyText}</p>
+      <p className='ml-4'>{DummyText}</p>
+      <h3 id="find-highlight">2.5 Find and highlight the currently active heading</h3>
+      <p className='ml-4'>{DummyText}</p>
+      <p className='ml-4'>{DummyText}</p>
+      
+      <h2 id='conclusion'>3. Conclusion</h2>
       <p>{DummyText}</p>
     </div>
   )

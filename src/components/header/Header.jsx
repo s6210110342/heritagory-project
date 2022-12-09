@@ -73,7 +73,7 @@ const Header = () => {
         <Route path="*" element={<NotMatch />}></Route>
 
         {/* thai page */}
-        <Route path="/thai/:title" element={<Blog />}></Route>
+        <Route path="/thai/:id" element={<Blog />}></Route>
 
         {/* islam page */}
         <Route path="/calc" element={<Calc />}></Route>
