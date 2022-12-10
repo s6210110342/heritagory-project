@@ -24,11 +24,7 @@ const Home = () => {
     const filteredBlogs = allBlogs.filter((blog) =>
       blog.title.toLowerCase().includes(searchKey.toLowerCase().trim())
     );
-    const filteredBlog = allBlogs.filter((blog) =>
-      blog.description.toLowerCase().includes(searchKey.toLowerCase().trim())
-    );
     setBlogs(filteredBlogs);
-    setBlogs(filteredBlog);
   };
   
    // Clear search and show all blogs
