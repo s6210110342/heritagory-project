@@ -1,4 +1,5 @@
 .content{
+  font-family: 'Noto Sans Thai', sans-serif;
   max-width: 1000px;
   padding: 16px;
   border-radius: 8px;
@@ -9,31 +10,34 @@
   font-weight: 400;
   line-height: 1.8;
   margin-bottom: 10px;
-  font-size: 18px;
-  color: var(--text-color);
+  font-size: 19px;
+  font-weight: 500;
+  color: #696969;
 }
 
 h2 {
   margin-bottom: 20px;
   color: var(--title-color);
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 50px;
+  font-weight: 900;
 }
 
 h3{
   margin-left: 16px;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 20px;
-  font-size: 18.4px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 h4 {
   margin-left: 32px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 20px;
   text-decoration-line: underline;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--title-color);
 }
 

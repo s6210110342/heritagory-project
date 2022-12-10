@@ -6,6 +6,7 @@ import "../thai.css";
 import TableOfContent from "../../Table Content/TableOfContent";
 import Chip from "../common/Chip";
 import EmptyList from "../EmptyList ";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const { id } = useParams();

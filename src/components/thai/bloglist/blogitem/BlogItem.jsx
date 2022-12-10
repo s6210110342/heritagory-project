@@ -19,8 +19,8 @@ const BlogItem = ({ blog: { description, title, content, subCategory, id} }) => 
         {description}
       </p>
       <footer>
-        <Link className="blogItem-link " to={`/thai/${id}`}>
-          อ่านเพิ่มเติม <i className="bx bx-right-arrow-alt thai__button-icon"></i>
+        <Link className="blogItem-link" to={`/thai/${id}`}>
+          อ่านเพิ่มเติม
         </Link>
       </footer>
     </div>

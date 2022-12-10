@@ -27,12 +27,8 @@ const Home = () => {
     const filteredBlog = allBlogs.filter((blog) =>
       blog.description.toLowerCase().includes(searchKey.toLowerCase().trim())
     );
-    const filteredBlogContent = allBlogs.filter((blog) =>
-      blog.content.toLowerCase().includes(searchKey.toLowerCase().trim())
-    );
     setBlogs(filteredBlogs);
     setBlogs(filteredBlog);
-    setBlogs(filteredBlogContent);
   };
   
    // Clear search and show all blogs
@@ -45,8 +41,13 @@ const Home = () => {
   const categoryData = thaiData.map((value) => {
     return value.category;
   });
-  const tabsData = [...new Set(categoryData)];
+  const tabsData = ["ทั้งหมด", ...new Set(categoryData)];
   const filterCategory = (category) => {
+    if(category=="ทั้งหมด"){
+      setBlogs(thaiData);
+      return;
+    }
+
     const filteredData = thaiData.filter((value) => {
       return value.category == category;
     });
@@ -55,13 +56,16 @@ const Home = () => {
 
   return (
     <section className="container thai section" id="thai">
-      <div >
+      <div>
         <Helmet>
           <title>{TITLE}</title>
         </Helmet>
 
         <h2 className="section__title mt-8">กฎหมายมรดกไทย</h2>
-        <span className="section__subtitle">Contact Us</span>
+        <span className="section__subtitle">
+          ความรู้ทางกฎหมายมรดกไทย แบ่งออกเป็น 6 หัวข้อ คือ ผู้มีสิทธิรับมรดก
+          การรับมรดกแทนที่ กรณีเกี่ยวกับพระภิกษุ การเสียสิทธิในการรับมรดก และพินัยกรรม
+        </span>
 
         <SearchBar
           value={searchKey}
@@ -72,9 +76,9 @@ const Home = () => {
 
         <Category filterCategory={filterCategory} tabsData={tabsData} />
         {!blogs.length ? (
-            <EmptyList />
-          ) : (
-            <BlogList blogs={blogs} key={blogs.id} />
+          <EmptyList />
+        ) : (
+          <BlogList blogs={blogs} key={blogs.id} />
         )}
       </div>
     </section>
