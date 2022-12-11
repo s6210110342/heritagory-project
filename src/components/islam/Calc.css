@@ -1,4 +1,4 @@
-.App-header {
+.Calc-header {
   height: 86px;
   display: flex;
   place-content: center;
@@ -10,16 +10,16 @@
   border-bottom-right-radius: 50px;
 }
 
-.App-name {
+.Calc-name {
   font-size: 25px;
   line-height: 46px;
 }
 
-.App-main {
+.Calc-main {
   display: grid;
 }
 
-.App-calculate-button {
+.Calc-calculate-button {
   margin-top: 50px;
   position: 100;
   bottom: 16px;
@@ -32,11 +32,11 @@
 }
 
 @media (min-width: 780px) {
-  .App-main {
+  .Calc-main {
     margin: 48px 84px;
     margin-bottom: 80px;
   }
-  .App-calculate-button {
+  .Calc-calculate-button {
     padding: 5px 32px;
     /* left: unset;
     right: unset; */
@@ -46,7 +46,7 @@
   }
 
   @supports not (inset-inline-end: 16px) {
-    .App-calculate-button {
+    .Calc-calculate-button {
       right: 16px;
     }
   }
