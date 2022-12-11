@@ -1,14 +1,13 @@
-import Test from './posts-thai/Test'
-import Test1 from './posts-thai/Test1'
+import ทายาทในกองมรดก from './posts-thai/ทายาทในกองมรดก'
 
 export const thaiData = [
     {
         id: 1,
-        title: 'ทายาทโดยธรรม',
-        category: 'ผู้ที่มีสิทธิรับมรดก',
-        subCategory: ['ลำดับทายาท', 'การรับมรดก'],
+        title: 'ทายาทในกองมรดกสามารถเป็นใครได้บ้าง ?',
+        category: 'ผู้มีสิทธิรับมรดก',
+        subCategory: ['ทายาท', 'การรับมรดก'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        content: <ทายาทในกองมรดก />,
     },
     {
         id: 2,
@@ -16,7 +15,7 @@ export const thaiData = [
         category: 'การรับมรดกแทนที่',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 3,
@@ -24,7 +23,7 @@ export const thaiData = [
         category: 'เกี่ยวกับพระภิกษุ',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 4,
@@ -32,7 +31,7 @@ export const thaiData = [
         category: 'การเสียสิทธิรับมรดก',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 5,
@@ -40,15 +39,15 @@ export const thaiData = [
         category: 'การเสียสิทธิรับมรดก',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 6,
         title: 'Test2',
-        category: 'การเสียสิทธิรับมรดก',
+        category: 'พินัยกรรม',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ดดดลำดับ',
-        content: <Test />,
+        // content: <Test />,
     },
 ]
 
