@@ -1,0 +1,53 @@
+.Calc-header {
+  height: 86px;
+  display: flex;
+  place-content: center;
+  padding: 0 24px;
+  background: #e6e4c7;
+  box-shadow: 0 4px 6px rgba(230, 228, 199, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.Calc-name {
+  font-size: 25px;
+  line-height: 46px;
+}
+
+.Calc-main {
+  display: grid;
+}
+
+.Calc-calculate-button {
+  margin-top: 50px;
+  position: 100;
+  bottom: 16px;
+  width: 100%;
+  /* right: 10%; */
+  left: 40%;
+  min-width: 132.688px;
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 780px) {
+  .Calc-main {
+    margin: 48px 84px;
+    margin-bottom: 80px;
+  }
+  .Calc-calculate-button {
+    padding: 5px 32px;
+    /* left: unset;
+    right: unset; */
+    width: 250px;
+    inset-inline-end: 16px;
+    
+  }
+
+  @supports not (inset-inline-end: 16px) {
+    .Calc-calculate-button {
+      right: 16px;
+    }
+  }
+}
