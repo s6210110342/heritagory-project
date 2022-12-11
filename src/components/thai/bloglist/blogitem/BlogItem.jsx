@@ -1,12 +1,30 @@
-import React from 'react'
-import './blogitem.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import Chip from "../../common/Chip";
+import "./blogitem.css";
 
-const BlogItem = () => {
+const BlogItem = ({ blog: { description, title, content, subCategory, id} }) => {
   return (
-    <div>
-        <h1>BlogItem</h1>
-    </div>
-  )
-}
+    <div className="blogItem-wrap">
+      <div className="blog_subCategory">
+        {subCategory.map((subCategory, i) => (            
+          <div key={i}>
+            <Chip label={subCategory} />
+          </div>
+        ))}
+      </div>
 
-export default BlogItem
+      <h3 className="">{title}</h3>
+      <p className="blogItem-desc">
+        {description}
+      </p>
+      <footer>
+        <Link className="blogItem-link" to={`/thai/${id}`}>
+          อ่านเพิ่มเติม
+        </Link>
+      </footer>
+    </div>
+  );
+};
+
+export default BlogItem;

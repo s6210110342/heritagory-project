@@ -1,64 +1,63 @@
-// import React, { useEffect, useState } from 'react'
-// import { Helmet } from 'react-helmet';
-// import { Link, useParams } from 'react-router-dom'
-// import { thaiData } from '../Data';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router";
+import { thaiData } from "../Data";
+import { Link } from "react-router-dom";
+import "../thai.css";
+import TableOfContent from "../../Table Content/TableOfContent";
+import Chip from "../common/Chip";
+import EmptyList from "../EmptyList ";
+import { Helmet } from "react-helmet";
 
-// const Blog = () => {
-//   const {title} = useParams();
-//   const [blog, setBlog, content] = useState(null)
+const Blog = () => {
+  const { id } = useParams();
+  const [blog, setBlog] = useState(null);
 
-//   useEffect(() => {
-//     let blog = thaiData.find(blog => blog.title === parseInt(title));
+  useEffect(() => {
+    let blog = thaiData.find((blog) => blog.id === parseInt(id));
+    if (blog) {
+      setBlog(blog);
+    }
+  }, []);
 
-//     if(blog) {
-//       setBlog(blog);
-//       content(blog);
-//     }
-//   }, [])
-
-//   return (
-//     // <div>
-//     //   <Link to='/thai'></Link>
-//     // </div>
-    
-//     <section className="thai section" id="thai">
-//       <Helmet>
-//         <title>{item.title}</title>
-//       </Helmet>
-//       <div className="thai__container container grid">
-//         <Link to='/thai'><i class="uil uil-arrow-circle-left thai__icon"></i> ย้อนกลับ | Go Back</Link>
-//         <span className="section__subtitle">Category</span>
-//         <h2 className="section__title -mt-[70px]">{item.title}</h2>
-
-//         {/* <p>{item.content}</p> */}
-//       </div>
-
-//     </section>
-//   )
-// }
-
-// export default Blog
-
-import React from 'react'
-// import { Link } from 'react-router-dom'
-
-const Blog = ({item}) => {
   return (
-    // <section className="blog section" id="blog" key={item.id}>
-    //   <div className="thai__container container grid">
-    //     <Link to='/thai'><i class="uil uil-arrow-circle-left thai__icon"></i> ย้อนกลับ | Go Back</Link>
+    <section className=" blog section" id="blog">
+      <div>
+        <Link className="blog__goBack" to="/thai">
+          <span>
+            <i class="uil uil-arrow-circle-left"></i> ย้อนกลับ
+          </span>
+        </Link>
+
+        {blog ? (
+          <div className="blog-wrap">
+            <header>
+              <div className='blog-subCategory'>
+                {blog.subCategory.map((category, i) => (
+                  <div key={i}>
+                    <Chip label={category} />
+                  </div>
+                ))}
+              </div>
+              <h1 className="section__title -mt-11 title">{blog.title}</h1>
+            </header>
+            {/* <img src={blog.cover} alt='cover' /> */}
+            <div className="wrapper">
+              <TableOfContent />
+              <p className="mb-7">{blog.content}</p>
+            </div>
+          </div>
+        ) : (
+          <EmptyList />
+        )}
         
-    //     <span className="section__subtitle">Category</span>
-    //     <h2 className="section__title -mt-[70px]">{item.title}</h2>
-    //   </div>
-
-    // </section>
-    <>
-      <div className="thai__card" key={item.id}>
-            <h3 className="thai__title">{item.title}</h3>
+        <Link className="blog__goBack" to="/thai">
+          <span>
+            <i class="uil uil-arrow-circle-left"></i> ย้อนกลับ
+          </span>
+        </Link>
       </div>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default Blog
+export default Blog;
