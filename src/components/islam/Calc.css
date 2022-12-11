@@ -1,182 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap");
-
- table{
-    text-align: center;
-    font-family: var(--body-font);
-  }
-  
-
-.Drop1{
-    /* width: center; */
-    display: inline-block;
-    /* color: rgb(127, 78, 78); */
-    /* background-color: #c30000; */
-    min-width: 80px;
-    /* padding: 10px 10px; */
-    cursor: pointer;
-    /* text-align: center; */
-    margin-top: 50px;
-    border: 0.5px solid #251919;
-    border-radius: 4px;
-    width: 29%;
-    font-family: 'Noto Sans Thai', sans-serif;
+.App-header {
+  height: 86px;
+  display: flex;
+  place-content: center;
+  padding: 0 24px;
+  background: #e6e4c7;
+  box-shadow: 0 4px 6px rgba(230, 228, 199, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* border-radius: 10px; */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-/* .Drop1:hover{
-    background-color: #bfe0ec;
-    border-radius: 4pxrgb(0, 0, 0)
-} */
-
-.Number{
-    padding-left: 5px;
-    margin-top: 15px;
+.App-name {
+  font-size: 25px;
+  line-height: 46px;
 }
 
-/* .Button1{
-    margin-top: 10px;
-    border: 0.5px solid #251919;
-} */
-/* 
-.Add{
-    border: 0.1px solid #251919;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 4px;
-} */
-
-
-/* .Add:hover{
-    background-color: #e6f3f8;
-}
-.Sub{
-    border: 0.1px solid #251919;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 4px;
-} */
-
-.Sub:hover{
-    background-color: #e6f3f8;
+.App-main {
+  display: grid;
 }
 
-/* .btn btn-light{
-    margin-left: 100px;
-    border: 0.25px solid #251919;
-} */
+.App-calculate-button {
+  margin-top: 50px;
+  position: 100;
+  bottom: 16px;
+  width: 100%;
+  /* right: 10%; */
+  left: 40%;
+  min-width: 132.688px;
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+}
 
-/* .Body{
-    text-align: center;
-    font-family: 'Noto Sans Thai', sans-serif;
-} */
-
-  .form-field label,
-  h2,h5 {
-    font-family: 'Noto Sans Thai', sans-serif;
+@media (min-width: 780px) {
+  .App-main {
+    margin: 48px 84px;
+    margin-bottom: 80px;
   }
-  
-  input {
-    height: 35px;
-    width: 15%;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
-  }
-
-  input:focus {
-    text-decoration: no;
-  }
-  
-  input:focus-within {
-    border: 1px solid rgba(89, 86, 86, 0.781);
+  .App-calculate-button {
+    padding: 5px 32px;
+    /* left: unset;
+    right: unset; */
+    width: 250px;
+    inset-inline-end: 16px;
+    
   }
 
-
-  /* ตาราง */
-
-  .Table {
-    text-align: center;
-    margin-left: 400px;
-    margin-top: 10px;
-    font-family: 'Noto Sans Thai', sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-
-  /* จบตาราง */
-
-  .Cal{
-    font-family: 'Noto Sans Thai', sans-serif;
-  }
-
-  .result{
-    font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-  }
-
-  .button-reset{
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
-
-  /*=============== BUTTONS ===============*/
-  .button-reset {
-    display: inline-block;
-    background-color: #ed4646;
-    color: var(--container-color);
-    padding: 1.25rem 2rem;
-    border-radius: 1rem;
-    font-weight: var(--font-medium);
-  }
-  
-  .button-reset:hover {
-    background-color: #ff0000;
-  }
-  
-  .button-reset__icon {
-    margin-left: var(--mb-0-5);
-  }
-  
-  .button-reset--flex {
-    display: inline-flex;
-    align-items: center;
-  }
-  /*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 992px) {
-    .container {
-      padding-left: var(--mb-1-5);
-      padding-right: var(--mb-1-5);
-    }
-  
-    .button-reset {
-      padding: 1rem 1.75rem;
-    }
-  
-    .button-reset__icon {
-      width: 22px;
-      height: 22px;
+  @supports not (inset-inline-end: 16px) {
+    .App-calculate-button {
+      right: 16px;
     }
   }
-
-
-  /* ------------table---------------- */
-
+}
