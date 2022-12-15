@@ -1,4 +1,7 @@
 import ทายาทในกองมรดก from './posts-thai/ทายาทในกองมรดก'
+import ผู้จัดการมรดก from './posts-thai/ผู้จัดการมรดก'
+import img1 from '../../assets/thai/img_title/ทายาทในกองมรดก.png'
+import img2 from '../../assets/thai/img_title/ผู้จัดการมรดก.png'
 
 export const thaiData = [
     {
@@ -6,16 +9,18 @@ export const thaiData = [
         title: 'ทายาทในกองมรดกสามารถเป็นใครได้บ้าง ?',
         category: 'ผู้มีสิทธิรับมรดก',
         subCategory: ['ทายาท', 'การรับมรดก'],
-        description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
+        description: 'ทายาทในกองมรดกมี 2 ประเภท คือ ทายาทโดยธรรม และผู้รับพินัยกรรม',
         content: <ทายาทในกองมรดก />,
+        cover: img1,
     },
     {
         id: 2,
-        title: 'Test2',
-        category: 'การรับมรดกแทนที่',
-        subCategory: ['test1', 'test2', 'test3'],
+        title: 'ผู้จัดการมรดกคือใคร ใครสามารถเป็นได้บ้าง ?',
+        category: 'ผู้มีสิทธิรับมรดก',
+        subCategory: ['ผู้จัดการมรดก', 'ทายาท'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        // content: <Test />,
+        content: <ผู้จัดการมรดก />,
+        cover: img2,
     },
     {
         id: 3,

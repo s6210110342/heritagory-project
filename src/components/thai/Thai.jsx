@@ -8,7 +8,7 @@ import Category from "./Category";
 import EmptyList from "./EmptyList ";
 
 const Home = () => {
-  const TITLE = "กฎหมายมรดกไทย - Thai Inheritance Law";
+  const TITLE = "กฎหมายมรดกทั่วไป - Thai Inheritance Law";
   const [blogs, setBlogs] = useState(thaiData);
   const [searchKey, setSearchKey] = useState('');
 
@@ -57,9 +57,9 @@ const Home = () => {
           <title>{TITLE}</title>
         </Helmet>
 
-        <h2 className="section__title mt-8">กฎหมายมรดกไทย</h2>
+        <h2 className="section__title mt-8">กฎหมายมรดกทั่วไป</h2>
         <span className="section__subtitle">
-          ความรู้ทางกฎหมายมรดกไทย แบ่งออกเป็น 6 หัวข้อ คือ ผู้มีสิทธิรับมรดก
+          ความรู้ทางกฎหมายมรดกทั่วไป แบ่งออกเป็น 6 หัวข้อ คือ ผู้มีสิทธิรับมรดก
           การรับมรดกแทนที่ กรณีเกี่ยวกับพระภิกษุ การเสียสิทธิในการรับมรดก และพินัยกรรม
         </span>
 

@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import Chip from "../../common/Chip";
 import "./blogitem.css";
 
-const BlogItem = ({ blog: { description, title, content, subCategory, id} }) => {
+const BlogItem = ({ blog: { cover, description, title, content, subCategory, id} }) => {
   return (
     <div className="blogItem-wrap">
+      <img className='blogItem-cover' src={cover} alt='cover'/>
       <div className="blog_subCategory">
         {subCategory.map((subCategory, i) => (            
           <div key={i}>

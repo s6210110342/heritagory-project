@@ -31,7 +31,7 @@ const Blog = () => {
         {blog ? (
           <div className="blog-wrap">
             <header>
-              <div className='blog-subCategory'>
+              <div className="blog-subCategory">
                 {blog.subCategory.map((category, i) => (
                   <div key={i}>
                     <Chip label={category} />
@@ -40,7 +40,8 @@ const Blog = () => {
               </div>
               <h1 className="section__title -mt-11 title">{blog.title}</h1>
             </header>
-            {/* <img src={blog.cover} alt='cover' /> */}
+            
+            <img src={blog.cover} alt="cover" className="blog-img"/>
             <div className="wrapper">
               <TableOfContent />
               <p className="mb-7">{blog.content}</p>
@@ -49,7 +50,7 @@ const Blog = () => {
         ) : (
           <EmptyList />
         )}
-        
+
         <Link className="blog__goBack" to="/thai">
           <span>
             <i class="uil uil-arrow-circle-left"></i> ย้อนกลับ

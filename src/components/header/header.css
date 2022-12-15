@@ -64,7 +64,7 @@
 
 /* =============== BREAKPOINTS ===============*/
 /* For medium devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .header {
         bottom: initial;
         top: 0;
@@ -74,6 +74,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        text-align: center;
         
     }
 

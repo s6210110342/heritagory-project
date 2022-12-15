@@ -18,7 +18,7 @@ const About = () => {
       <section className="about section" id="about">
         <div className="-mt-12 grid">
           <span className="about_font">
-            HeritageLaws เป็นเว็บไซต์ที่ให้ความรู้แก่ผู้ที่สนใจในกฎหมายมรดกไทย
+            HeritageLaws เป็นเว็บไซต์ที่ให้ความรู้แก่ผู้ที่สนใจในกฎหมายมรดกทั่วไป
             หรือกฎหมายมรดกอิสลาม โดยสามารถนรองรับอุปกรณ์ได้ทั้ง Desktop, Ipad
             และ Smartphone นอกจากนี้เพื่อความสะดวกสบายในการใช้งานทางเราได้มีการ
             พัฒนาบน Line Official เป็น Line Bot ซึ่งเป็นส่วนหนึ่งของโครงงาน
@@ -64,9 +64,9 @@ const About = () => {
 
         {/* ไทย */}
         <div>
-          <h1 className="about_title">กฎหมายมรดกไทย</h1>
+          <h1 className="about_title">กฎหมายมรดกทั่วไป</h1>
           <span className="about_font">
-            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกไทยมีดังนี้
+            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกทั่วไปมีดังนี้
           </span>
 
           <div className="about__container1 grid text-center">
@@ -81,7 +81,7 @@ const About = () => {
                 className="text-indigo-700 underline"
                 href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
               >
-                หนังสือกฎหมายมรดกไทย
+                หนังสือกฎหมายมรดกทั่วไป
               </a>
             </p>
           </div>
@@ -113,7 +113,7 @@ const About = () => {
         <div>
           <h1 className="about_title">กฎหมายมรดกอิสลาม</h1>
           <span className="about_font">
-            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกไทยมีดังนี้
+            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกทั่วไปมีดังนี้
           </span>
 
           {/* <div className="about__container1 grid text-center">
@@ -128,7 +128,7 @@ const About = () => {
                     className="text-indigo-700 underline"
                     href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
                   >
-                    หนังสือกฎหมายมรดกไทย
+                    หนังสือกฎหมายมรดกทั่วไป
                   </a>
                 </p>
             </div>

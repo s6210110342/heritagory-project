@@ -15,7 +15,7 @@
   color: #696969;
 }
 
-h2 {
+h1, h2 {
   margin-bottom: 20px;
   color: var(--title-color);
   font-size: 24px;
@@ -33,12 +33,28 @@ h3{
 
 h4 {
   margin-left: 32px;
-  margin-top: 10px;
+  margin-top: 22px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 19px;
   text-decoration-line: underline;
   font-weight: 600;
   color: var(--title-color);
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+tr {
+  text-align: center;
+}
+
+.list__post {
+  list-style-type: disc;
+  color: var(--title-color);
+  margin-left: 2rem;
+  font-size: 19px;
+  font-weight: 500;
 }
 
 /*=============== BREAKPOINTS ===============*/
