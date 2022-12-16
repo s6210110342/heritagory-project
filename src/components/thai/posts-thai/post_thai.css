@@ -57,6 +57,12 @@ tr {
   font-weight: 500;
 }
 
+.post__ref{
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

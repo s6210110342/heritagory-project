@@ -6,7 +6,6 @@ import "../thai.css";
 import TableOfContent from "../../Table Content/TableOfContent";
 import Chip from "../common/Chip";
 import EmptyList from "../EmptyList ";
-import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const { id } = useParams();
@@ -17,7 +16,7 @@ const Blog = () => {
     if (blog) {
       setBlog(blog);
     }
-  }, []);
+  }, [id]);
 
   return (
     <section className=" blog section" id="blog">
@@ -38,7 +37,7 @@ const Blog = () => {
                   </div>
                 ))}
               </div>
-              <h1 className="section__title -mt-11 title">{blog.title}</h1>
+              <h1 className="section__title -mt-11 title mr-1 ml-1">{blog.title}</h1>
             </header>
             
             <img src={blog.cover} alt="cover" className="blog-img"/>

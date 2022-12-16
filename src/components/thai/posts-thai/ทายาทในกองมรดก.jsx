@@ -1,10 +1,17 @@
 import "./post_thai.css";
 import img1 from "../../../assets/thai/บุตร_หลาน.png";
 import img2 from "../../../assets/thai/คู่สมรส.png";
+import { Helmet } from "react-helmet";
 
 const MainContent = () => {
+  const TITLE = "ทายาทในกองมรดกสามารถเป็นใครได้บ้าง";
+
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+
       <div className="content">
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ทายาทตามประมาลกฎหมายแพ่งและพาณิชย์ มาตรา
@@ -236,17 +243,16 @@ const MainContent = () => {
         {/* 2. ผู่รับพินัยกรรม */}
         <h2 id="tenth-header">2. ผู้รับพินัยกรรม</h2>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผู้รับพินัยกรรมจะไม่มีปัญหาอะไร
-          เพราะเจ้ามรดกจะทำพินัยกรรมยกทรัพย์สินให้แก่ผู้รับพินัยกรรม
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เมื่อเจ้ามรดกทำพินัยกรรมยกทรัพย์สินให้แก่ผู้รับพินัยกรรม
           ถ้าพินัยกรรมนั้นสมบูรณ์
-          เมื่อเจ้ามรดกเสียชีวิตทรัพย์สินที่เจ้ามรดกได้ทำพินัยกรรมไว้จะตกแก่ผู้รับพินัยกรรมทันที
+          และตอนเจ้ามรดกเสียชีวิตทรัพย์สินที่เจ้ามรดกได้ทำพินัยกรรมไว้จะตกแก่ผู้รับพินัยกรรมทันที
           ซึ่งผู้รับพินัยกรรมไม่จำเป็นต้องเป็นญาติของเจ้ามรดกเท่านั้น
           อาจเป็นบุคคลอื่น ๆ ก็ได้
         </p>
       </div>
 
       <div>
-        <h1>แนะนำสำหรับคุณ</h1>
+        <h1 className="ml-4">แนะนำสำหรับคุณ</h1>
         <ul className="list__post">
           <li>
             <a className="text-indigo-700 underline" href="/thai/2">
