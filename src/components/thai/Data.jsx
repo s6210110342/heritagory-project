@@ -1,8 +1,10 @@
 import ทายาทในกองมรดก from './posts-thai/ทายาทในกองมรดก'
 import ผู้จัดการมรดก from './posts-thai/ผู้จัดการมรดก'
 import พินัยกรรม from './posts-thai/พินัยกรรม'
+import การรับมรดกแทนที่ from './posts-thai/การรับมรดกแทนที่'
 import img1 from '../../assets/thai/img_title/ทายาทในกองมรดก.png'
 import img2 from '../../assets/thai/img_title/ผู้จัดการมรดก.png'
+import img3 from '../../assets/thai/img_title/รับมรดกแทนที่.png'
 
 export const thaiData = [
     {
@@ -25,11 +27,12 @@ export const thaiData = [
     },
     {
         id: 3,
-        title: 'Test2',
+        title: 'กรณีใดบ้างที่สามารถรับมรดกแทนที่กันได้',
         category: 'เกี่ยวกับพระภิกษุ',
-        subCategory: ['test1', 'test2', 'test3'],
+        subCategory: ['การรับมรดกแทนที่', 'ทายาท'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        // content: <Test />,
+        content: <การรับมรดกแทนที่ />,
+        cover: img3,
     },
     {
         id: 4,

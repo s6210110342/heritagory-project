@@ -259,6 +259,16 @@ const MainContent = () => {
               ผู้จัดการมรดกคือใคร ใครสามารถเป็นได้บ้าง ?
             </a>
           </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/thai/3">
+              กรณีใดบ้างที่สามารถรับมรดกแทนที่กันได้
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/thai/6">
+              รูปแบบพินัยกรรม ใครสามารถทำพินัยกรรมได้บ้าง ?
+            </a>
+          </li>
         </ul>
       </div>
     </>
