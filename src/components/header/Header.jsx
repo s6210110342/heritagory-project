@@ -29,11 +29,6 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> เกี่ยวกับเรา
-              </Link>
-            </li>
-            <li className="nav__item">
               <Link to="/thai" className="nav__link">
                 <i className="uil uil-books nav__icon"></i> กฎหมายมรดกทั่วไป
               </Link>
@@ -41,6 +36,11 @@ const Header = () => {
             <li className="nav__item">
               <Link to="/islam" className="nav__link">
                 <i className="uil uil-book-open nav__icon"></i> กฎหมายมรดกอิสลาม
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/about" className="nav__link">
+                <i className="uil uil-user nav__icon"></i> เกี่ยวกับเรา
               </Link>
             </li>
             <li className="nav__item">
