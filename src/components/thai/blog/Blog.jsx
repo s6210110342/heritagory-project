@@ -6,7 +6,6 @@ import "../thai.css";
 import TableOfContent from "../../Table Content/TableOfContent";
 import Chip from "../common/Chip";
 import EmptyList from "../EmptyList ";
-import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const { id } = useParams();
@@ -17,7 +16,7 @@ const Blog = () => {
     if (blog) {
       setBlog(blog);
     }
-  }, []);
+  }, [id]);
 
   return (
     <section className=" blog section" id="blog">
@@ -31,16 +30,17 @@ const Blog = () => {
         {blog ? (
           <div className="blog-wrap">
             <header>
-              <div className='blog-subCategory'>
+              <div className="blog-subCategory">
                 {blog.subCategory.map((category, i) => (
                   <div key={i}>
                     <Chip label={category} />
                   </div>
                 ))}
               </div>
-              <h1 className="section__title -mt-11 title">{blog.title}</h1>
+              <h1 className="section__title -mt-11 title mr-1 ml-1">{blog.title}</h1>
             </header>
-            {/* <img src={blog.cover} alt='cover' /> */}
+            
+            <img src={blog.cover} alt="cover" className="blog-img"/>
             <div className="wrapper">
               <TableOfContent />
               <p className="mb-7">{blog.content}</p>
@@ -49,7 +49,7 @@ const Blog = () => {
         ) : (
           <EmptyList />
         )}
-        
+
         <Link className="blog__goBack" to="/thai">
           <span>
             <i class="uil uil-arrow-circle-left"></i> ย้อนกลับ

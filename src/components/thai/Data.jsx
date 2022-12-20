@@ -1,5 +1,5 @@
-// import Test from './posts-thai/Test'
-// import Test1 from './posts-thai/Test1'
+import Test from './posts-thai/Test'
+import Test1 from './posts-thai/Test1'
 
 export const thaiData = [
     {
@@ -8,7 +8,7 @@ export const thaiData = [
         category: 'ผู้ที่มีสิทธิรับมรดก',
         subCategory: ['ลำดับทายาท', 'การรับมรดก'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        // content: <Test />,
+        content: <Test />,
     },
     {
         id: 2,
@@ -16,15 +16,15 @@ export const thaiData = [
         category: 'การรับมรดกแทนที่',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        // content: <Test />,
+        content: <Test />,
     },
     {
         id: 3,
-        title: 'Test2',
+        title: 'กรณีใดบ้างที่สามารถรับมรดกแทนที่กันได้',
         category: 'เกี่ยวกับพระภิกษุ',
-        subCategory: ['test1', 'test2', 'test3'],
+        subCategory: ['การรับมรดกแทนที่', 'ทายาท'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        // content: <Test />,
+        content: <Test />,
     },
     {
         id: 4,
@@ -44,11 +44,11 @@ export const thaiData = [
     },
     {
         id: 6,
-        title: 'Test2',
-        category: 'การเสียสิทธิรับมรดก',
-        subCategory: ['test1', 'test2', 'test3'],
+        title: 'รูปแบบพินัยกรรม ใครสามารถทำพินัยกรรมได้บ้าง ?',
+        category: 'พินัยกรรม',
+        subCategory: ['พินัยกรรม'],
         description: 'ดดดลำดับ',
-        // content: <Test />,
+        content: <Test />,
     },
 ]
 

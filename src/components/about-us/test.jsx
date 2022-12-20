@@ -26,7 +26,7 @@ const Test = () => {
       <div className="home__container container grid">
         <h2 className="section__title">เกี่ยวกับเรา</h2>
         <span className="section__subtitle about__font">
-          เว็บไซต์ให้ความรู้และแชทบอทเกี่ยวกับกฎหมายมรดกไทย และกฎหมายมรดกอิสลาม 
+          เว็บไซต์ให้ความรู้และแชทบอทเกี่ยวกับกฎหมายมรดกทั่วไป และกฎหมายมรดกอิสลาม 
           เป็นส่วนหนึ่งของโครงงาน สาขาวิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยสงขลานครินทร์ 
           ซึ่งได้มีการจัดทำโดย <u> นางสาว ศิขรินทร์ สามงามทอง </u> และ 
           <u> นางสาวสะอาดะห์ ดายันตา </u> นักศึกษาชั้นปีที่ 4
@@ -40,7 +40,7 @@ const Test = () => {
             <div className="about__content">
               <div>
                 <i className="uil uil-books about__icon"></i>
-                <h3 className="about__title">แหล่งข้อมูล <br /> กฎหมายมรดกไทย</h3>
+                <h3 className="about__title">แหล่งข้อมูล <br /> กฎหมายมรดกทั่วไป</h3>
               </div>
               <span className="about__button" onClick={() => toggleTab(1)}>
                 ดูรายละเอียดเพิ่มเติม <i className="uil uil-arrow-right about__button-icon"></i>
@@ -54,7 +54,7 @@ const Test = () => {
 
                     {/* 1 */}
                     <div>
-                      <h3 className="about__modal-title">หนังสือ E-book กฎหมายมรดกไทย</h3>
+                      <h3 className="about__modal-title">หนังสือ E-book กฎหมายมรดกทั่วไป</h3>
                       <p className="about__modal-description">
                         ของมหาวิทยาลัยรามคำแหง
                       </p>
@@ -66,7 +66,7 @@ const Test = () => {
                           <br /> ----------------------------
                           <br /> อ่านต่อที่ : {""} <br /> 
                           <a className="text-indigo-700" href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311">
-                            หนังสือกฎหมายมรดกไทย
+                            หนังสือกฎหมายมรดกทั่วไป
                           </a>
                           </p>
                         </div>
@@ -108,7 +108,7 @@ const Test = () => {
                           <br /> ----------------------------
                           <br /> อ่านต่อที่ : {""} <br /> 
                           <a className="text-indigo-700" href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311">
-                            หนังสือกฎหมายมรดกไทย
+                            หนังสือกฎหมายมรดกทั่วไป
                           </a>
                           </p>
                         </div>

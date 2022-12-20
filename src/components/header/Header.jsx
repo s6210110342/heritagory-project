@@ -35,12 +35,12 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <Link to="/thai" className="nav__link">
-                <i className="uil uil-books nav__icon"></i> ไทย
+                <i className="uil uil-books nav__icon"></i> กฎหมายมรดกทั่วไป
               </Link>
             </li>
             <li className="nav__item">
               <Link to="/islam" className="nav__link">
-                <i className="uil uil-book-open nav__icon"></i> อิสลาม
+                <i className="uil uil-book-open nav__icon"></i> กฎหมายมรดกอิสลาม
               </Link>
             </li>
             <li className="nav__item">

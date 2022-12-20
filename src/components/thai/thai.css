@@ -130,14 +130,28 @@
   width: 100%;
 }
 
+.blog-img {
+  width: 70%;
+  border-radius: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+  border-width: 8px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {  
     .wrapper {
         display: contents;
     }
+    
     .blog__goBack {
         margin-left: 2rem;
+    }
+    .blog-img {
+      width: 80%;
+      margin-bottom: 0;
     }
 }
 
@@ -163,6 +177,9 @@
 @media screen and (max-width: 547px) {
   .thai__filter {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-img {
+    width: 100%;
   }
 }
 

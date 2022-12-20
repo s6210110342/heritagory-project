@@ -41,7 +41,7 @@
 
 .home__description {
     margin-bottom: var(--mb-1);
-    min-width: 350px;
+    /* min-width: 350px; */
     font-size: 18.4px;
 }
 
@@ -116,6 +116,10 @@
     text-align: center;
 }
 
+.button {
+    padding: 0.8rem 1rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -157,7 +161,7 @@
 }
     
 /* For medium devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
     .home__content {
         grid-template-columns: 0.5fr 3fr;
         padding-top: 3.5rem;
