@@ -1,5 +1,5 @@
-import Test from './posts-thai/Test'
-import Test1 from './posts-thai/Test1'
+// import Test from './posts-thai/Test'
+// import Test1 from './posts-thai/Test1'
 
 export const thaiData = [
     {
@@ -8,7 +8,7 @@ export const thaiData = [
         category: 'ผู้ที่มีสิทธิรับมรดก',
         subCategory: ['ลำดับทายาท', 'การรับมรดก'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ export const thaiData = [
         category: 'การรับมรดกแทนที่',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const thaiData = [
         category: 'เกี่ยวกับพระภิกษุ',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ export const thaiData = [
         category: 'การเสียสิทธิรับมรดก',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 5,
@@ -40,7 +40,7 @@ export const thaiData = [
         category: 'การเสียสิทธิรับมรดก',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ลำดับของทายาทโดยธรรม มี 6 ลำดับ คือ 1 2 3 4 5 6 fvdfvdfvfdvfdfgbvfgbvfgbfgbfgb',
-        content: <Test />,
+        // content: <Test />,
     },
     {
         id: 6,
@@ -48,7 +48,8 @@ export const thaiData = [
         category: 'การเสียสิทธิรับมรดก',
         subCategory: ['test1', 'test2', 'test3'],
         description: 'ดดดลำดับ',
-        content: <Test />,
+        // content: <Test />,
     },
 ]
+
 
