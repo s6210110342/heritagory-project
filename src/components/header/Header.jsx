@@ -8,6 +8,7 @@ import Islam from "../islam/Islam";
 import { Contact } from "../contact/Contact";
 import NotMatch from "../../NotMatch";
 import Blog from '../thai/blog/Blog'
+import IsBlog from "../islam/blog/IsBlog";
 
 const Header = () => {
   /* =============== Toggle Menu ===============*/
@@ -75,6 +76,7 @@ const Header = () => {
         <Route path="/thai/:id" element={<Blog />}></Route>
 
         {/* islam page */}
+        <Route path="/islam/:id" element={<IsBlog />}></Route>
         
       </Routes>
     </header>
