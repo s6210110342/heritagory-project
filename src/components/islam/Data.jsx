@@ -8,7 +8,7 @@ import img1 from "../../assets/islam/img-title/กฎหมายมรดก.pn
 import img2 from "../../assets/islam/img-title/ทายาท.png";
 import img3 from "../../assets/islam/img-title/คำนวณ.png";
 import img4 from "../../assets/thai/img_title/พระภิกษุ.png";
-import img5 from "../../assets/thai/img_title/เสียสิทธิ.png";
+import img5 from "../../assets/islam/img-title/พินัยกรรม.png";
 
 export const islamData = [
   {
@@ -68,6 +68,6 @@ export const islamData = [
     subCategory: ["พินัยกรรม"],
     description: "ดดดลำดับ",
     // content: <พินัยกรรม />,
-    cover: img1,
+    cover: img5,
   },
 ];
