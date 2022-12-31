@@ -7,9 +7,10 @@ import ทายาทอิส from "./posts-islam/ทายาทอิส";
 import img1 from "../../assets/islam/img-title/กฎหมายมรดก.png";
 import img2 from "../../assets/islam/img-title/ทายาท.png";
 import img3 from "../../assets/islam/img-title/คำนวณ.png";
-import img4 from "../../assets/thai/img_title/พระภิกษุ.png";
+import img4 from "../../assets/islam/img-title/พิเศษ.png";
 import img5 from "../../assets/islam/img-title/พินัยกรรม.png";
 import imgุ6 from "../../assets/islam/img-title/อายัต.png";
+
 
 export const islamData = [
   {
