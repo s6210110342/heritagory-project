@@ -11,7 +11,6 @@ import img4 from "../../assets/islam/img-title/พิเศษ.png";
 import img5 from "../../assets/islam/img-title/พินัยกรรม.png";
 import imgุ6 from "../../assets/islam/img-title/อายัต.png";
 
-
 export const islamData = [
   {
     id: 1,
