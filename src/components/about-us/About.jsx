@@ -4,6 +4,9 @@ import "./about.css";
 import ThaiLawImg from "../../assets/About-law-thai1.jpg";
 import YTImg from "../../assets/yt3.png";
 import { Helmet } from "react-helmet";
+import Ebook from "../../assets/islam/Ebook.png"
+import WebEgypt from "../../assets/islam/WebEgypt.png"
+import IbnuAffan from "../../assets/islam/IbnuAffan.png"
 
 const About = () => {
   const TITLE = "เกี่ยวกับเรา - About Us";
@@ -113,48 +116,107 @@ const About = () => {
         <div>
           <h1 className="about_title">กฎหมายมรดกอิสลาม</h1>
           <span className="about_font">
-            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกทั่วไปมีดังนี้
+            แหล่งข้อมูลที่ได้รวบรวมและนำมาศึกษาในกฎหมายมรดกอิสลามมีดังนี้
           </span>
 
-          {/* <div className="about__container1 grid text-center">
-              <img src={ThaiLawImg} alt="" className="about__img" />
+          <div className="about__container1 grid text-center">
+              <img src={Ebook} alt="" className="about__img" />
               
                 <p className="about_font">
-                  กฎหมายแพ่งและพาณิชย์ว่าด้วยมรดกทั้ง <br /> (Civil and Commercial Code
-                  : Succession)
+                  เรียนรู้กฏหมายการแบ่งมรดกอิสลาม
                   <br /> ----------------------------
                   <br /> อ่านต่อที่ : {""} 
                   <a
                     className="text-indigo-700 underline"
-                    href="http://old-book.ru.ac.th/e-book/inside/html/dlbook.asp?code=LW311"
+                    href="https://anyflip.com/nhfy/olfs/basic"
                   >
-                    หนังสือกฎหมายมรดกทั่วไป
+                    เรียนรู้กฏหมายการแบ่งมรดกอิสลาม
                   </a>
                 </p>
             </div>
 
             <div className="about__container1 grid text-center">
-              <img src={YTImg} alt="" className="YT__img" />
-              <p className="about_font">
-                ศึกษาผ่านทาง Youtube Channel
-                <br /> ----------------------------
-                <br /> ประวัติส่วนตัว : {""} 
-                <a
-                  className="text-indigo-700 underline"
-                  href="https://race.nstru.ac.th/home_ex/e-portfolio/index.php/search/personal/1976"
-                >
-                  YATREE SOMLAM
-                </a>
-                <br /> Youtube Channel : {""} 
-                <a
-                  className="text-indigo-700 underline"
-                  href="https://www.youtube.com/channel/UCEQCn1dFIW51SbF3ss8gEyg"
-                >
-                  YATREE SOMLAM
-                </a>
-              </p>
+              <img src={WebEgypt} alt="" className="WEB__img" />
               
-            </div>   */}
+                <p className="about_font">
+                  دارالإفتاء
+                  <br /> ----------------------------
+                  <br/>เว็บไซต์จากประเศอียิปต์
+                  <br /> อ่านต่อที่ : {""} 
+                  <a
+                    className="text-indigo-700 underline"
+                    href="https://www.aliftaa.jo/Default.aspx"
+                  >
+                    دارالإفتاء
+                  </a>
+                </p>
+            </div>
+
+            <div className="about__container1 grid text-center">
+              <img src={IbnuAffan} alt="" className="WEB__img" />
+              
+                <p className="about_font">
+                  อัล-ฟะรออิฎ บทว่าด้วยการแ่บ่งมรดก
+                  <br /> ----------------------------
+                  <br /> อ่านต่อที่ : {""} 
+                  <a
+                    className="text-indigo-700 underline"
+                    href="https://ibnuauf.net/article_detail.php?articleID=13"
+                  >
+                    อัล-ฟะรออิฎ บทว่าด้วยการแ่บ่งมรดก
+                  </a>
+                </p>
+            </div>
+            
+            <div className="about__container2 grid text-center">
+              {/* <img src={IbnuAffan} alt="" className="WEB__img" /> */}
+              
+                <p className="about_font">
+                  หลักการจัดการแบ่งมรดกให้แก่ทายาทตามกฎหมายอิสลาม
+                  <br /> ----------------------------
+                  <br /> อ่านต่อที่ : {""} 
+                  <a
+                    className="text-indigo-700 underline"
+                    href="https://soreda.oas.psu.ac.th/files/680_file_Chapter3.pdf"
+                  >
+                    หลักการจัดการแบ่งมรดกให้แก่ทายาทตามกฎหมายอิสลาม
+                  </a>
+                </p>
+            </div> 
+
+            <div className="about__container2 grid text-center">
+              {/* <img src={IbnuAffan} alt="" className="WEB__img" /> */}
+              
+                <p className="about_font">
+                  เปรียบเทียบการทำพินัยกรรมระหว่างบทบัญญัติอิสลามและกฎหมายไทย
+
+                  <br /> ----------------------------
+                  <br /> อ่านต่อที่ : {""} 
+                  <a
+                    className="text-indigo-700 underline"
+                    href="https://soreda.oas.psu.ac.th/files/680_file_Chapter3.pdf"
+                  >
+                    เปรียบเทียบการทำพินัยกรรมระหว่างบทบัญญัติอิสลามและกฎหมายไทย
+                  </a>
+                </p>
+            </div>
+
+            <div className="about__container2 grid text-center">
+              {/* <img src={IbnuAffan} alt="" className="WEB__img" /> */}
+              
+                <p className="about_font">
+                  การใช้กฎหมายอิสลาม ในพื้นที่จังหวัดชายแดนภาคใต้ (เฉพาะเรื่องครอบครัวและมรดก)
+
+                  <br /> ----------------------------
+                  <br /> อ่านต่อที่ : {""} 
+                  <a
+                    className="text-indigo-700 underline"
+                    href="https://www.nsc.go.th/wp-content/uploads/Journal/article-00906.pdf"
+                  >
+                    การใช้กฎหมายอิสลาม ในพื้นที่จังหวัดชายแดนภาคใต้ (เฉพาะเรื่องครอบครัวและมรดก)
+                  </a>
+                </p>
+            </div>                
         </div>
       </section>
     </div>

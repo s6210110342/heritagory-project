@@ -15,6 +15,13 @@
   margin-top: 2rem;
 }
 
+.about__container2 {
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .about__img {
   width: 250px;
   border-radius: 1rem;
@@ -24,6 +31,13 @@
 
 .YT__img {
   width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  justify-self: center;
+}
+
+.WEB__img{
+  width: 500px;
   border-radius: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   justify-self: center;
