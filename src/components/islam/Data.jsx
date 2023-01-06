@@ -4,10 +4,6 @@ import คำนวณ from "./posts-islam/คำนวณ";
 import กรณีพิเศษ from "./posts-islam/กรณีพิเศษ";
 import อายัต from "./posts-islam/อายัต";
 import พินัยกรรมอิส from "./posts-islam/พินัยกรรมอิส";
-// import พินัยกรรม from "./posts-thai/พินัยกรรม";
-// import การรับมรดกแทนที่ from "./posts-thai/การรับมรดกแทนที่";
-// import พระภิกษุ from './posts-thai/พระภิกษุ'
-// import การเสียสิทธิรับมรดก from './posts-thai/การเสียสิทธิในมรดก'
 import img1 from "../../assets/islam/img-title/กฎหมายมรดก.png";
 import img2 from "../../assets/islam/img-title/ทายาท.png";
 import img3 from "../../assets/islam/img-title/คำนวณ.png";
@@ -18,7 +14,7 @@ import imgุ6 from "../../assets/islam/img-title/อายัต.png";
 export const islamData = [
   {
     id: 1,
-    title: "ความรู้ทั่วไปของกฎหมายมรดกอิสลาม",
+    title: "ความรู้ทั่วไปของกฎหมายมรดกอิสลาม", 
     category: "ความรู้ทั่วไป",
     subCategory: ["ข้อมูลทั่วไป"],
     description:
