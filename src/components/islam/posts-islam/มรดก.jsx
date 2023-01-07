@@ -166,6 +166,26 @@ const มรดก = () => {
               ทายาทที่มีสิทธิและเสียสิทธิรับมรดก
             </a>
           </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/3">
+            วิธีการคำนวณมรดกอิสลาม
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/4">
+              การแบ่งมรดกกรณีพิเศษ
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/5">
+              บทบัญญัติที่ถูกกล่าวถึงในกฎหมายมรดก
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/6">
+              พินัยกรรม
+            </a>
+          </li>
         </ul>
       </div>
     </>

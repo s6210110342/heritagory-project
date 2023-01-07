@@ -48,7 +48,7 @@ const กรณีพิเศษ = () => {
                       <a className="text underline"><mark className=" bg-[#fee9b2] rounded-xl">การแบ่งมรดกครั้งที่ 1 (นาย ก.)</mark>{" "}</a>{" "} 
                       <img
                         src={Ex1}
-                        alt="บุตร_หลาน"
+                        alt="Ex1"
                         className="w-11/12 block ml-auto mr-auto mt-3"
                       />
                       <br></br>
@@ -66,7 +66,7 @@ const กรณีพิเศษ = () => {
                       <a className="text underline"><mark className=" bg-[#fee9b2] rounded-xl">การแบ่งมรดกครั้งที่ 2 (นาย ข.)</mark>{" "}</a>{" "} 
                       <img
                         src={Ex2}
-                        alt="บุตร_หลาน"
+                        alt="Ex2"
                         className="w-11/12 block ml-auto mr-auto mt-3"
                       />
                       <br></br>
@@ -267,9 +267,29 @@ const กรณีพิเศษ = () => {
       <div>
         <h1 className="ml-4">แนะนำสำหรับคุณ</h1>
         <ul className="list__post">
+        <li>
+            <a className="text-indigo-700 underline" href="/islam/1">
+            ความรู้ทั่วไปของกฎหมายมรดกอิสลาม
+            </a>
+          </li>
           <li>
             <a className="text-indigo-700 underline" href="/islam/2">
               ทายาทที่มีสิทธิและเสียสิทธิรับมรดก
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/3">
+            วิธีการคำนวณมรดกอิสลาม
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/5">
+              บทบัญญัติที่ถูกกล่าวถึงในกฎหมายมรดก
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/6">
+              พินัยกรรม
             </a>
           </li>
         </ul>

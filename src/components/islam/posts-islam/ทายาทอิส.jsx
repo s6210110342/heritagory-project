@@ -1365,9 +1365,29 @@ const ทายาทอิส = () => {
       <div>
         <h1 className="ml-4">แนะนำสำหรับคุณ</h1>
         <ul className="list__post">
-          <li>
+        <li>
             <a className="text-indigo-700 underline" href="/islam/1">
-              ความรู้ทั่วไปของกฎหมายมรดกอิสลาม
+            ความรู้ทั่วไปของกฎหมายมรดกอิสลาม
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/3">
+            วิธีการคำนวณมรดกอิสลาม
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/4">
+              การแบ่งมรดกกรณีพิเศษ
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/5">
+              บทบัญญัติที่ถูกกล่าวถึงในกฎหมายมรดก
+            </a>
+          </li>
+          <li>
+            <a className="text-indigo-700 underline" href="/islam/6">
+              พินัยกรรม
             </a>
           </li>
         </ul>
