@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import BlogList from "./bloglist/BlogList";
-import SearchBar from './SearchBar';
+import SearchBar from "./SearchBar";
 import { thaiData } from "./Data";
 import "./thai.css";
 import Category from "./Category";
@@ -10,7 +10,7 @@ import EmptyList from "./EmptyList ";
 const Home = () => {
   const TITLE = "กฎหมายมรดกทั่วไป - Thai Inheritance Law";
   const [blogs, setBlogs] = useState(thaiData);
-  const [searchKey, setSearchKey] = useState('');
+  const [searchKey, setSearchKey] = useState("");
 
   // Search submit
   const handleSearchBar = (e) => {
@@ -26,11 +26,11 @@ const Home = () => {
     );
     setBlogs(filteredBlogs);
   };
-  
-   // Clear search and show all blogs
-   const handleClearSearch = () => {
+
+  // Clear search and show all blogs
+  const handleClearSearch = () => {
     setBlogs(thaiData);
-    setSearchKey('');
+    setSearchKey("");
   };
 
   // category
@@ -39,7 +39,7 @@ const Home = () => {
   });
   const tabsData = ["ทั้งหมด", ...new Set(categoryData)];
   const filterCategory = (category) => {
-    if(category=="ทั้งหมด"){
+    if (category == "ทั้งหมด") {
       setBlogs(thaiData);
       return;
     }
@@ -59,8 +59,9 @@ const Home = () => {
 
         <h2 className="section__title mt-8">กฎหมายมรดกทั่วไป</h2>
         <span className="section__subtitle">
-          ความรู้ทางกฎหมายมรดกทั่วไป แบ่งออกเป็น 6 หัวข้อ คือ ผู้มีสิทธิรับมรดก
-          การรับมรดกแทนที่ กรณีเกี่ยวกับพระภิกษุ การเสียสิทธิในการรับมรดก และพินัยกรรม
+          ความรู้ทางกฎหมายมรดกทั่วไป แบ่งออกเป็น 4 หัวข้อ คือ <br />
+          ผู้มีสิทธิรับมรดก กรณีเกี่ยวกับพระภิกษุ การเสียสิทธิในการรับมรดก
+          และพินัยกรรม
         </span>
 
         <SearchBar
