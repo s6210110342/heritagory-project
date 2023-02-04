@@ -18,7 +18,7 @@ const Data = () => {
       <div className=" text-center">
         <a href="/thai" className="button home__button mr-2 mb-2">กฎหมายมรดกทั่วไป</a>
         <a href="/islam" className="button home__button mr-2 mb-2">กฎหมายมรดกอิสลาม</a>
-        <a href="/islam" className="button home__button mr-2">คำนวณมรดกอิสลาม</a>  
+        <a href="https://islamic-inheritance-calc.web.app/" className="button home__button mr-2">คำนวณมรดกอิสลาม</a>  
         
       </div>
     </div>
